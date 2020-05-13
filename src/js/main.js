@@ -26,7 +26,7 @@ $(document).ready(function () {
 
   close.click(function(){
     close.toggle();
-    hamburgerMenu.hide();
+    hamburgerMenu.toggle();
     iconHamburger.toggle();
   });
 

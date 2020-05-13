@@ -16,46 +16,66 @@
 
 @mixin reset-list{
   list-style: none;
-  
 }
+
+@mixin color-a-nav-bar{
+  color: $brown;
+  font-weight: bold;
+  text-decoration: $none;
+}
+
+@mixin btn-header-nav{
+  padding: 7px 10px;
+  color: #30488f;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  background-color: $white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 //General Rules
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: $open-sans;
   margin: 0 auto;
+  height: 4000px;
+}
+
+main{
+  padding-top: 60px;
 }
 
 
 
 /* Small screen */
-@media screen and (max-width: 768px){
-  h1{
-    font-size:7px;
-  }
+@media screen and (max-width: 768px) {
+  
 }
 
 /* Medium screen */
-@media all and (min-width: 769px) and (max-width: 1249px){
-  h1{
-    font-size:10px;
+@media all and (min-width: 769px) and (max-width: 1169px) {
+  main{
+    padding-top: 80px;
   }
 
 }
 
 
 /* big screen */
-@media all and (min-width: 1250px){
-  body{
-    width: 1300px;
+@media all and (min-width: 1170px) {
+  body {
+    width: 1170px;
   }
-  
+
+
 }
 
 

@@ -15,29 +15,28 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
+  height: 4000px;
+}
+
+main {
+  padding-top: 60px;
 }
 
 /* Small screen */
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 7px;
-  }
-}
-
 /* Medium screen */
 
-@media all and (min-width: 769px) and (max-width: 1249px) {
-  h1 {
-    font-size: 10px;
+@media all and (min-width: 769px) and (max-width: 1169px) {
+  main {
+    padding-top: 80px;
   }
 }
 
 /* big screen */
 
-@media all and (min-width: 1250px) {
+@media all and (min-width: 1170px) {
   body {
-    width: 1300px;
+    width: 1170px;
   }
 }
 
@@ -45,87 +44,139 @@ body {
   Header
 ******************/
 
-header {
+#head {
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  height: 70px;
-  border-bottom: 1px solid #7a7a7a;
+  height: 60px;
+  border-bottom: 1px solid #949494;
+  margin: 0 auto;
 }
 
 .header-left {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .header-left img {
-  height: 40px;
+  height: 25px;
 }
 
 .header-right ul {
   list-style: none;
-  height: 100%;
-  text-align: right;
 }
 
 .header-right ul li {
   display: inline-block;
   margin: 0 20px;
-  line-height: 70px;
-  height: 100%;
 }
 
 .header-right ul a {
-  color: #565A5C;
+  color: #58402C;
+  font-weight: bold;
   text-decoration: none;
 }
 
-.header-right ul a.cta {
-  padding: 10px 20px;
+.header-right ul .cta {
+  padding: 7px 10px;
   color: #30488f;
   border: 1px solid #30488f;
-  border-radius: 5px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-right ul .cta img {
+  width: 20px;
+  vertical-align: middle;
+  margin: 0 5px 3px 0;
+}
+
+.header-right ul .cta:hover {
+  transition: 0.7s;
+  background: #30488f;
+  color: #ffffff;
 }
 
 .hamburger {
-  margin-right: 20px;
-  font-size: 30px;
-  color: #7a7a7a;
+  margin-right: 40px;
+  font-size: 25px;
+  color: #58402C;
 }
 
 .close {
   display: none;
-  margin-right: 20px;
-  color: #7a7a7a;
-  font-size: 30px;
+  margin-right: 40px;
+  color: #58402C;
+  font-size: 25px;
   text-decoration: none;
 }
 
 .hamburger-menu {
   position: absolute;
-  top: 70px;
+  top: 60px;
   left: 0;
   display: none;
   padding: 10px;
   width: 100%;
-  min-width: 100vw;
-  border-bottom: 1px solid #7a7a7a;
+  border-bottom: 1px solid #949494;
+  background: white;
 }
 
 .hamburger-menu ul {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
-.hamburger-menu ul a {
-  color: grey;
+.hamburger-menu ul li {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.hamburger-menu ul li a {
+  color: #58402C;
+  font-weight: bold;
   text-decoration: none;
   font-size: 15px;
-  border-bottom: 2px solid white;
+}
+
+.hamburger-menu ul li a:hover {
+  color: #30488f;
+}
+
+.hamburger-menu ul li:last-child {
+  text-align: center;
+}
+
+.hamburger-menu ul li:last-child .cta {
+  padding: 7px 10px;
+  color: #30488f;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  background-color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.hamburger-menu ul li:last-child .cta img {
+  width: 20px;
+  vertical-align: middle;
+  margin: 0 5px 3px 0;
+}
+
+.hamburger-menu ul li:last-child .cta:hover {
+  transition: 0.7s;
+  background: #30488f;
+  color: #ffffff;
 }
 
 /* Small screen */
@@ -138,19 +189,40 @@ header {
 
 /* Medium screen */
 
-@media all and (min-width: 769px) and (max-width: 1249px) {
-  .hamburger {
+@media all and (min-width: 769px) and (max-width: 1169px) {
+  #head {
+    padding: 0 20px;
+  }
+
+  .container {
+    height: 80px;
+  }
+
+  .header-left {
+    margin-left: 0;
+  }
+
+  .hamburger,
+  .close,
+  .hamburger-menu {
     display: none;
   }
 }
 
 /* big screen */
 
-/* big screen */
+@media all and (min-width: 1170px) {
+  #head {
+    padding: 0 20px;
+  }
 
-@media all and (min-width: 1250px) {
-  body {
-    width: 1300px;
+  .container {
+    max-width: 1170px;
+    height: 80px;
+  }
+
+  .header-left {
+    margin-left: 0;
   }
 
   .hamburger {
@@ -161,6 +233,14 @@ header {
 /****************** 
   Main
 ******************/
+
+#jumbotron {
+  height: 600px;
+}
+
+/* Medium screen */
+
+/* big screen */
 
 /****************** 
   Footer
