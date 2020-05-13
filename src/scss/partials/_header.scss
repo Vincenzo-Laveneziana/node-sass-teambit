@@ -12,6 +12,7 @@ header {
 }
 
 .header-left {
+  margin-left: 20px;
 
   img {
     height: 40px;
@@ -20,8 +21,7 @@ header {
 
 
 .header-right {
- 
-
+  
   ul {
     list-style: none;
     height: 100%;
@@ -49,15 +49,17 @@ header {
 
 }
 
-
+.hamburger{
+  margin-right: 20px;
+  font-size: $font-s30;
+  color: $grey;
+}
 
 .close {
   display: none;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  color: rgb(0, 0, 0);
-  font-size: 35px;
+  margin-right: 20px;
+  color: $grey;
+  font-size: $font-s30;
   text-decoration: none;
 }
 
@@ -67,7 +69,7 @@ header {
   top: 70px;
   left: 0;
   display: none;
-  padding: 0px;
+  padding: 10px;
   width: 100%;
   min-width: 100vw;
   border-bottom: 1px solid $grey;
@@ -96,6 +98,7 @@ header {
 
 /* Small screen */
 @media screen and (max-width: 768px){
+
   .header-right ul {
       display: none;
   }
