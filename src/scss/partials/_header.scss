@@ -1,3 +1,136 @@
 /****************** 
   Header
 ******************/
+
+header {
+  @include flex-space-between;
+  align-items: $align-center;
+
+  padding: 0 20px;
+  height: 70px;
+  border-bottom: 1px solid $grey;
+}
+
+.header-left {
+
+  img {
+    height: 40px;
+  }
+}
+
+
+.header-right {
+ 
+
+  ul {
+    list-style: none;
+    height: 100%;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      line-height: 70px;
+      height: 100%;
+    }
+
+    a {
+      color: #565A5C;
+      text-decoration: none;
+      
+      &.cta {
+        padding: 10px 20px;
+        color: #30488f;
+        border: 1px solid #30488f;
+        border-radius: 5px;
+      }
+    }
+  }
+
+}
+
+
+
+.close {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  text-decoration: none;
+}
+
+
+.hamburger-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+  padding: 0px;
+  width: 100%;
+  min-width: 100vw;
+  border-bottom: 1px solid $grey;
+ 
+
+  ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+
+    a {
+      color: grey;
+      text-decoration: none;
+      font-size: 15px;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+
+
+
+
+/* Small screen */
+@media screen and (max-width: 768px){
+  .header-right ul {
+      display: none;
+  }
+  
+}
+
+
+/* Medium screen */
+@media all and (min-width: 769px) and (max-width: 1249px){
+
+  .hamburger{
+    display: none;
+  }
+
+}
+
+/* big screen */
+/* big screen */
+@media all and (min-width: 1250px){
+  body{
+    width: 1300px;
+  }
+  
+  .hamburger{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

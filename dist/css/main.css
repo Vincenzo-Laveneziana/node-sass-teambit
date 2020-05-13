@@ -13,13 +13,142 @@
 }
 
 body {
-  background-color: #000000;
-  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+
+/* Small screen */
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 7px;
+  }
+}
+
+/* Medium screen */
+
+@media all and (min-width: 769px) and (max-width: 1249px) {
+  h1 {
+    font-size: 10px;
+  }
+}
+
+/* big screen */
+
+@media all and (min-width: 1250px) {
+  body {
+    width: 1300px;
+  }
 }
 
 /****************** 
   Header
 ******************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  border-bottom: 1px solid #7a7a7a;
+}
+
+.header-left img {
+  height: 40px;
+}
+
+.header-right ul {
+  list-style: none;
+  height: 100%;
+  text-align: right;
+}
+
+.header-right ul li {
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 70px;
+  height: 100%;
+}
+
+.header-right ul a {
+  color: #565A5C;
+  text-decoration: none;
+}
+
+.header-right ul a.cta {
+  padding: 10px 20px;
+  color: #30488f;
+  border: 1px solid #30488f;
+  border-radius: 5px;
+}
+
+.close {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: black;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+  padding: 0px;
+  width: 100%;
+  min-width: 100vw;
+  border-bottom: 1px solid #7a7a7a;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.hamburger-menu ul a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 2px solid white;
+}
+
+/* Small screen */
+
+@media screen and (max-width: 768px) {
+  .header-right ul {
+    display: none;
+  }
+}
+
+/* Medium screen */
+
+@media all and (min-width: 769px) and (max-width: 1249px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* big screen */
+
+/* big screen */
+
+@media all and (min-width: 1250px) {
+  body {
+    width: 1300px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
 
 /****************** 
   Main
@@ -28,5 +157,21 @@ body {
 /****************** 
   Footer
 ******************/
+
+/****************** 
+  Query
+******************/
+
+/* big screen */
+
+/* @media all and (min-width: 1250px){
+
+} */
+
+/* Small screen */
+
+/* @media screen and (max-width: 768px){
+
+} */
 
 
