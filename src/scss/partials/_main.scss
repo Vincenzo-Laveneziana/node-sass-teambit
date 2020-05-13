@@ -3,8 +3,52 @@
 ******************/
 #jumbotron {
 
-  height: 600px;
- 
+  @include flex-align-center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 750px;
+  position: relative;
+  margin: 100px 0 100px;
+
+  .jumbo-container{
+    width: 90%;
+    text-align: center;
+
+    h1 {
+      color: $brown;
+      font-size: 45px;
+    }
+
+    p {
+      margin-top: 20px;
+      color: $brown;
+      font-size: 17px;
+    }
+
+    span{
+      margin: 0 10px;
+      color: $grey;
+      font-size: 13px;
+    }
+
+    .cta {
+      @include btn-jumbotron;
+      margin-top: 50px;
+      
+      img {
+        width: 20px;
+        vertical-align: middle;
+        margin: 0 5px 3px 0;
+
+      }
+
+    }
+  }
+
+  > img {
+    width: 550px;
+    
+  }
 
 
 
@@ -21,12 +65,19 @@
 
 /* Medium screen */
 @media all and (min-width: 769px) and (max-width: 1169px) {
-  
+  #jumbotron{
+    padding: 0 20px;
+    flex-direction: row;
+  }
 
 }
 
 /* big screen */
 @media all and (min-width: 1170px) {
-  
+  #jumbotron{
+    padding: 0 20px;
+    flex-direction: row;
+  }
+
 
 }

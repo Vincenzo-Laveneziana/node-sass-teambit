@@ -49,6 +49,7 @@ main {
   position: fixed;
   width: 100%;
   background-color: white;
+  z-index: 1;
 }
 
 .container {
@@ -74,7 +75,7 @@ main {
 
 .header-right ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .header-right ul a {
@@ -235,12 +236,75 @@ main {
 ******************/
 
 #jumbotron {
-  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 750px;
+  position: relative;
+  margin: 100px 0 100px;
+}
+
+#jumbotron .jumbo-container {
+  width: 90%;
+  text-align: center;
+}
+
+#jumbotron .jumbo-container h1 {
+  color: #58402C;
+  font-size: 45px;
+}
+
+#jumbotron .jumbo-container p {
+  margin-top: 20px;
+  color: #58402C;
+  font-size: 17px;
+}
+
+#jumbotron .jumbo-container span {
+  margin: 0 10px;
+  color: #7a7a7a;
+  font-size: 13px;
+}
+
+#jumbotron .jumbo-container .cta {
+  padding: 7px 10px;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  background: #30488f;
+  margin-top: 50px;
+}
+
+#jumbotron .jumbo-container .cta img {
+  width: 20px;
+  vertical-align: middle;
+  margin: 0 5px 3px 0;
+}
+
+#jumbotron > img {
+  width: 550px;
 }
 
 /* Medium screen */
 
+@media all and (min-width: 769px) and (max-width: 1169px) {
+  #jumbotron {
+    padding: 0 20px;
+    flex-direction: row;
+  }
+}
+
 /* big screen */
+
+@media all and (min-width: 1170px) {
+  #jumbotron {
+    padding: 0 20px;
+    flex-direction: row;
+  }
+}
 
 /****************** 
   Footer

@@ -4,27 +4,32 @@
 
 
 //Mixins
-@mixin flex-space-between{
+@mixin flex-space-between {
   display: flex;
   justify-content: space-between;
 }
 
-@mixin flex-align-center{
+@mixin flex-align-center {
   display: flex;
   align-items: center;
 }
 
-@mixin reset-list{
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin reset-list {
   list-style: none;
 }
 
-@mixin color-a-nav-bar{
+@mixin color-a-nav-bar {
   color: $brown;
   font-weight: bold;
   text-decoration: $none;
 }
 
-@mixin btn-header-nav{
+@mixin btn-header-nav {
   padding: 7px 10px;
   color: #30488f;
   border: 1px solid #30488f;
@@ -32,6 +37,16 @@
   background-color: $white;
   font-weight: bold;
   cursor: pointer;
+}
+
+@mixin btn-jumbotron {
+  padding: 7px 10px;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  color: $white;
+  font-size: 15px;
+  cursor: pointer;
+  background:#30488f;
 }
 
 
