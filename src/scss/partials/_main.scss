@@ -64,11 +64,11 @@
 #intro{
   @include flex-center-center(column,center,center);
   background: #FFE7D2;
+  position: relative;
   
   
   .intro-container{
     @include flex-center-center(column,center,center);
-    border-bottom: 1px solid $lightgrey;
     text-align: center;
     padding: 80px 0;
 
@@ -86,7 +86,6 @@
         margin-bottom: 50px;
 
         img{
-          width: 140px;
           height: 100px;
           margin-bottom: 30px;
         }
@@ -99,10 +98,67 @@
     }//fine intro-info
 
     > img {
-      width: 300px
+      width: 300px;
     }
   }
-}
+
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 95%;
+    max-width: 1150px;
+    background-color: $lightgrey;
+  }
+}//fine intro
+
+#intro2{
+  @include flex-center-center(column,center,center);
+  background: #FFE7D2;
+  
+  
+  .intro-container{
+    @include flex-center-center(column,center,center);
+    text-align: center;
+    padding: 80px 0;
+
+    h2{
+      width: 480px;
+      color: $brown;
+      margin-bottom: 100px;
+      line-height: 35px;
+    }
+
+    h2:last-child{
+      margin: 90px 0 10px;
+    }
+
+    .intro-info{
+      @include flex-center-center(column,center,center);
+      margin-bottom: 35px;
+
+      .intro-info-object{
+        margin-bottom: 50px;
+
+        img{
+       
+          height: 100px;
+          margin-bottom: 30px;
+        }
+
+        p{
+          color: $brown;
+          font-size: 17px;
+        }
+      }     
+    }//fine intro-info
+
+    > img {
+      width: 300px;
+    }
+  }
+}//fine intro2
 
 
 
@@ -147,7 +203,34 @@
         }
       }
     }
-  }
+  }//fine intro
+
+  #intro2{
+    @include flex-center-center(row,center,flex-start);
+
+    .intro-container{
+      padding: 70px 0;
+
+      h2{
+        width: 650px;;       
+      }
+
+      .intro-info{
+        @include flex-center-center(row,center,flex-start);
+
+        .intro-info-object:nth-child(2){
+          margin: 0 5px;        
+  
+          p{
+            margin: 0 auto;
+            width: 80%; 
+            color: $brown;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }//fine intro2
 }
 
 // Large devices (desktops, 992px and up)
@@ -166,7 +249,22 @@
         }
       }
     }
-  }
+  }//fine intro
+
+  #intro2{
+    
+    .intro-container{
+    
+      .intro-info{
+    
+        .intro-info-object:nth-child(2){
+
+          margin: 0 30px;
+         
+        }
+      }
+    }
+  }//fine intro2
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -208,6 +306,25 @@
         }
       }
     }
-  }  
+
+    &::before{
+      width: 100%;
+    }
+  }//fine intro
+
+  #intro2{
+    
+    .intro-container{
+    
+      .intro-info{
+    
+        .intro-info-object:nth-child(2){
+
+          margin: 0 100px;
+         
+        }
+      }
+    }
+  }//fine intro
 }
 
