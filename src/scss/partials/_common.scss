@@ -47,6 +47,14 @@
   background:#30488f;
 }
 
+@mixin after-before($none: none, $value: 0){
+  content: '';
+  position: absolute;
+  top: $none;
+  bottom: $value;
+  
+}
+
 
 //General Rules
 
