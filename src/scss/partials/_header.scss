@@ -23,7 +23,6 @@
   img {
     height: 25px;
   }
-
 }
 
 .header-right {
@@ -53,7 +52,6 @@
         vertical-align: middle;
         margin: 0 5px 3px 0;
       }
-
     }
 
     .cta:hover{
@@ -61,9 +59,7 @@
       background: #30488f;
       color: $white;
     }
-
   }
-
 }//fine header right
 
 .hamburger {
@@ -110,8 +106,6 @@
         }
       }
 
-      
-
       &:last-child {
         text-align: center;
 
@@ -125,7 +119,6 @@
             vertical-align: middle;
             margin: 0 5px 3px 0;
           }
-
         }
 
         .cta:hover {
@@ -133,13 +126,9 @@
           background: #30488f;
           color: $white;
         }
-
       }
-
     }//fine li
-
   }//fine ul
-
 }// fine hamburger-menu
 
 // Small devices (landscape phones, 576px and up)
@@ -190,7 +179,6 @@
   .container{
     max-width: 1170px;
   }
-
 }
 
 

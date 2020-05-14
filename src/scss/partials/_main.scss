@@ -6,11 +6,12 @@
   @include flex-center-center(column,center,center);
   min-height: 850px;
   position: relative;
+  margin: 50px 0;
 
   .jumbo-container{
-    margin-top: 50px;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 30px;
+    margin-bottom: 20px;
 
     h1 {
       max-width: 780px;
@@ -43,9 +44,7 @@
         width: 20px;
         vertical-align: middle;
         margin: 0 5px 3px 0;
-
       }
-
     }
 
     a{
@@ -55,15 +54,55 @@
         color:#30488f;
       }
     }
-
   }//fine jumbotron container
 
   > img {
-    margin-top: 35px;
-    width: 550px;
+    width: 500px;
   }
-
 }//fine jumbotron
+
+#intro{
+  @include flex-center-center(column,center,center);
+  background: #FFE7D2;
+  
+  
+  .intro-container{
+    @include flex-center-center(column,center,center);
+    border-bottom: 1px solid $lightgrey;
+    text-align: center;
+    padding: 80px 0;
+
+    h2{
+      color: $brown;
+      margin-bottom: 100px;
+      line-height: 35px;
+    }
+
+    .intro-info{
+      @include flex-center-center(column,center,center);
+      margin-bottom: 35px;
+
+      .intro-info-object{
+        margin-bottom: 50px;
+
+        img{
+          width: 140px;
+          height: 100px;
+          margin-bottom: 30px;
+        }
+
+        p{
+          color: $brown;
+          font-size: 18px;
+        }
+      }     
+    }//fine intro-info
+
+    > img {
+      width: 300px
+    }
+  }
+}
 
 
 
@@ -84,36 +123,91 @@
         font-size: 20px;
       }
     }
+
+    > img {
+      width: 570px;
+    }
+  }//fine jumbotron
+
+  #intro{
+    @include flex-center-center(row,center,flex-start);
+
+    .intro-container{
+      padding: 70px 0;
+
+      h2{
+        max-width: 650px;;       
+      }
+
+      .intro-info{
+        @include flex-center-center(row,center,flex-start);
+
+        .intro-info-object:nth-child(2){
+          margin: 0 40px;        
+        }
+      }
+    }
   }
-  
-  
-  
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 
-  
- 
+  #intro{
+    
+    .intro-container{
+    
+      .intro-info{
+    
+        .intro-info-object:nth-child(2){
+
+          margin: 0 80px;
+         
+        }
+      }
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
   #jumbotron{
-    min-height: 550px;
-    padding: 0 20px;
-    flex-direction: row;
-    
 
+    @include flex-center-center(row, space-between,flex-start);
+    min-height: 650px;
+    padding: 90px 15px 0 ;
+    margin: 0 auto;
+    max-width: 1170px;
+   
     .jumbo-container{
       text-align: left;
+      padding: 0;
+      
+      h1{
+        line-height: 70px;
+        max-width: 520px;
+      }
 
       p{
         margin: 20px 0 0;
         max-width: 450px;
       }
     }
-  }
-   
+  }//fine jumbrotron
+
+  #intro{
+    
+    .intro-container{
+    
+      .intro-info{
+    
+        .intro-info-object:nth-child(2){
+
+          margin: 0 100px;
+         
+        }
+      }
+    }
+  }  
 }
 
