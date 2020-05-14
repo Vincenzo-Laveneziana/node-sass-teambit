@@ -45,7 +45,7 @@ main {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
 }
 
 .container {
@@ -311,10 +311,10 @@ main {
   align-items: center;
   text-align: center;
   padding: 80px 0;
+  color: #58402C;
 }
 
 #intro .intro-container h2 {
-  color: #58402C;
   margin-bottom: 100px;
   line-height: 35px;
 }
@@ -337,7 +337,6 @@ main {
 }
 
 #intro .intro-container .intro-info .intro-info-object p {
-  color: #58402C;
   font-size: 18px;
 }
 
@@ -370,11 +369,11 @@ main {
   align-items: center;
   text-align: center;
   padding: 80px 0;
+  color: #58402C;
 }
 
 #intro2 .intro-container h2 {
   width: 480px;
-  color: #58402C;
   margin-bottom: 100px;
   line-height: 35px;
 }
@@ -401,11 +400,50 @@ main {
 }
 
 #intro2 .intro-container .intro-info .intro-info-object p {
-  color: #58402C;
   font-size: 17px;
 }
 
 #intro2 .intro-container > img {
+  width: 300px;
+}
+
+#feedback .feed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 20px;
+}
+
+#feedback .feed-container > img {
+  width: 500px;
+}
+
+#feedback .feed-container .feed-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  color: #58402C;
+}
+
+#feedback .feed-container .feed-info p {
+  text-align: center;
+  max-width: 510px;
+  margin: 20px 0;
+  font-size: 17px;
+}
+
+#feedback .feed-container .feed-info a {
+  text-decoration: none;
+  color: #58402C;
+  margin-bottom: 40px;
+  font-size: 17px;
+  color: #30488f;
+}
+
+#feedback .feed-container .feed-info img {
   width: 300px;
 }
 
@@ -478,6 +516,22 @@ main {
     color: #58402C;
     font-size: 17px;
   }
+
+  #feedback .feed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 20px;
+  }
+
+  #feedback .feed-container > img {
+    width: 95%;
+  }
+
+  #feedback .feed-container .feed-info a {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -487,6 +541,48 @@ main {
 
   #intro2 .intro-container .intro-info .intro-info-object:nth-child(2) {
     margin: 0 30px;
+  }
+
+  #feedback .feed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 100px 0 20px;
+  }
+
+  #feedback .feed-container > img {
+    position: absolute;
+    width: 80%;
+    left: -300px;
+    /* transform: translateX(-250px); */
+  }
+
+  #feedback .feed-container .feed-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 50px 0;
+    width: 420px;
+  }
+
+  #feedback .feed-container .feed-info h2,
+  #feedback .feed-container .feed-info p {
+    text-align: left;
+  }
+
+  #feedback .feed-container .feed-info p {
+    font-size: 21px;
+    margin: 25px 0;
+  }
+
+  #feedback .feed-container .feed-info a {
+    font-size: 22px;
+  }
+
+  #feedback .feed-container .feed-info img {
+    margin-left: 80px;
   }
 }
 
@@ -527,6 +623,50 @@ main {
 
   #intro2 .intro-container .intro-info .intro-info-object:nth-child(2) {
     margin: 0 100px;
+  }
+
+  #feedback .feed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 100px auto 20px;
+    position: relative;
+    width: 1170px;
+  }
+
+  #feedback .feed-container > img {
+    position: absolute;
+    width: 65%;
+    left: -185px;
+    /* transform: translateX(-250px); */
+  }
+
+  #feedback .feed-container .feed-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 160px 0;
+    width: 420px;
+  }
+
+  #feedback .feed-container .feed-info h2,
+  #feedback .feed-container .feed-info p {
+    text-align: left;
+  }
+
+  #feedback .feed-container .feed-info p {
+    font-size: 21px;
+    margin: 25px 0;
+  }
+
+  #feedback .feed-container .feed-info a {
+    font-size: 22px;
+  }
+
+  #feedback .feed-container .feed-info img {
+    margin-left: 80px;
   }
 }
 
