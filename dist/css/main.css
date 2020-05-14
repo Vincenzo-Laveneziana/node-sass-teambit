@@ -193,6 +193,7 @@ main {
   in questo caso è stato usato con consapevolezza
   */
 
+  .hamburger,
   .close,
   .hamburger-menu {
     display: none !important;
@@ -212,12 +213,6 @@ main {
 
   .header-left {
     margin-left: 0;
-  }
-
-  .hamburger,
-  .close,
-  .hamburger-menu {
-    display: none;
   }
 }
 
