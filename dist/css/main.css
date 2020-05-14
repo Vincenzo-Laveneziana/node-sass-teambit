@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /****************** 
   Vars
 ******************/
@@ -22,19 +24,13 @@ main {
   padding-top: 60px;
 }
 
-/* Small screen */
-
-/* Medium screen */
-
-@media all and (min-width: 769px) and (max-width: 1169px) {
+@media (min-width: 992px) {
   main {
     padding-top: 80px;
   }
 }
 
-/* big screen */
-
-@media all and (min-width: 1170px) {
+@media (min-width: 1200px) {
   body {
     width: 1170px;
   }
@@ -54,6 +50,7 @@ main {
 
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 60px;
@@ -70,6 +67,7 @@ main {
 }
 
 .header-right ul {
+  display: none;
   list-style: none;
 }
 
@@ -82,6 +80,10 @@ main {
   color: #58402C;
   font-weight: bold;
   text-decoration: none;
+}
+
+.header-right ul a:hover {
+  color: #30488f;
 }
 
 .header-right ul .cta {
@@ -180,17 +182,26 @@ main {
   color: #ffffff;
 }
 
-/* Small screen */
-
-@media screen and (max-width: 768px) {
+@media (min-width: 576px) {
   .header-right ul {
     display: none;
   }
 }
 
-/* Medium screen */
+@media (min-width: 768px) {
+  /* 
+  in questo caso è stato usato con consapevolezza
+  */
 
-@media all and (min-width: 769px) and (max-width: 1169px) {
+  .close,
+  .hamburger-menu {
+    display: none !important;
+  }
+
+  .header-right ul {
+    display: inline-block;
+  }
+
   #head {
     padding: 0 20px;
   }
@@ -210,24 +221,9 @@ main {
   }
 }
 
-/* big screen */
-
-@media all and (min-width: 1170px) {
-  #head {
-    padding: 0 20px;
-  }
-
+@media (min-width: 1200px) {
   .container {
     max-width: 1170px;
-    height: 80px;
-  }
-
-  .header-left {
-    margin-left: 0;
-  }
-
-  .hamburger {
-    display: none;
   }
 }
 
@@ -237,20 +233,22 @@ main {
 
 #jumbotron {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-  height: 750px;
+  justify-content: center;
+  align-items: center;
+  min-height: 850px;
   position: relative;
-  margin: 100px 0 100px;
 }
 
 #jumbotron .jumbo-container {
-  width: 90%;
+  margin-top: 50px;
   text-align: center;
+  padding: 0 20px;
 }
 
 #jumbotron .jumbo-container h1 {
+  max-width: 780px;
+  margin: 0 auto;
   color: #58402C;
   font-size: 45px;
 }
@@ -275,7 +273,11 @@ main {
   font-size: 15px;
   cursor: pointer;
   background: #30488f;
-  margin-top: 50px;
+  margin: 30px 0 20px;
+}
+
+#jumbotron .jumbo-container .cta:hover {
+  background: #283b6e;
 }
 
 #jumbotron .jumbo-container .cta img {
@@ -284,46 +286,47 @@ main {
   margin: 0 5px 3px 0;
 }
 
+#jumbotron .jumbo-container a {
+  text-decoration: none;
+  color: #58402C;
+}
+
+#jumbotron .jumbo-container a:hover {
+  color: #30488f;
+}
+
 #jumbotron > img {
+  margin-top: 35px;
   width: 550px;
 }
 
-/* Medium screen */
-
-@media all and (min-width: 769px) and (max-width: 1169px) {
-  #jumbotron {
-    padding: 0 20px;
-    flex-direction: row;
+@media (min-width: 768px) {
+  #jumbotron .jumbo-container p {
+    max-width: 600px;
+    margin: 20px auto 0;
+    font-size: 20px;
   }
 }
 
-/* big screen */
-
-@media all and (min-width: 1170px) {
+@media (min-width: 1200px) {
   #jumbotron {
+    min-height: 550px;
     padding: 0 20px;
     flex-direction: row;
+  }
+
+  #jumbotron .jumbo-container {
+    text-align: left;
+  }
+
+  #jumbotron .jumbo-container p {
+    margin: 20px 0 0;
+    max-width: 450px;
   }
 }
 
 /****************** 
   Footer
 ******************/
-
-/****************** 
-  Query
-******************/
-
-/* big screen */
-
-/* @media all and (min-width: 1250px){
-
-} */
-
-/* Small screen */
-
-/* @media screen and (max-width: 768px){
-
-} */
 
 

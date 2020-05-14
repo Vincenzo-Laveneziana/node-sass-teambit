@@ -11,17 +11,9 @@ $(document).ready(function () {
 
 
   iconHamburger.click(function(){
-
    hamburgerMenu.toggle();
    close.toggle();
    iconHamburger.toggle();
-
-    //varie possibilità
-    //hamburgerMenu.fadeIn();
-    //hamburgerMenu.css("display", "block");
-    //hamburgerMenu.show();
-    //hamburgerMenu.addClass("active");
-
   });
 
   close.click(function(){

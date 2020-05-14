@@ -11,8 +11,7 @@
 }
 
 .container{
-  @include flex-space-between;
-  align-items: $align-center;
+  @include flex-center-center(row,space-between,center);
   height: 60px;
   border-bottom: $border-1-s-grey;
   margin: 0 auto;
@@ -28,7 +27,9 @@
 }
 
 .header-right {
+
   ul {
+    display: none;
     @include reset-list;
 
     li {
@@ -38,6 +39,10 @@
 
     a {
       @include color-a-nav-bar;
+      
+      &:hover {
+        color:#30488f;
+      }
     }
 
     .cta {
@@ -86,7 +91,6 @@
   border-bottom: $border-1-s-grey;
   background: white;
  
-
   ul {
     @include reset-list;
 
@@ -100,11 +104,13 @@
       a {
         @include color-a-nav-bar;
         font-size: 15px;
+
+        &:hover {
+          color:#30488f;
+        }
       }
 
-      a:hover {
-        color:#30488f;
-      }
+      
 
       &:last-child {
         text-align: center;
@@ -136,20 +142,27 @@
 
 }
 
-
-
-/* Small screen */
-@media screen and (max-width: 768px) {
-
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
   .header-right ul {
-      display: none;
+    display: none;
   }
-
 }
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  /* 
+  in questo caso è stato usato con consapevolezza
+  */
+  .close,
+  .hamburger-menu{
+    display: none !important;
+  }
 
-/* Medium screen */
-@media all and (min-width: 769px) and (max-width: 1169px) {
+  .header-right ul {
+    display: inline-block;
+  }
+
   #head {
     padding: 0 20px;
   }
@@ -167,31 +180,22 @@
   .hamburger-menu {
     display: none;
   }
-
 }
 
-/* big screen */
-@media all and (min-width: 1170px) {
-  #head {
-    padding: 0 20px;
-  }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
   
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
   .container{
     max-width: 1170px;
-    height: 80px;
-  }
-
-  .header-left {
-    margin-left: 0;
-  }
-
-  .hamburger {
-    display: none;
   }
 
 }
-
-
 
 
 

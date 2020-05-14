@@ -3,18 +3,18 @@
 ******************/
 #jumbotron {
 
-  @include flex-align-center;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 750px;
+  @include flex-center-center(column,center,center);
+  min-height: 850px;
   position: relative;
-  margin: 100px 0 100px;
 
   .jumbo-container{
-    width: 90%;
+    margin-top: 50px;
     text-align: center;
+    padding: 0 20px;
 
     h1 {
+      max-width: 780px;
+      margin: 0 auto; 
       color: $brown;
       font-size: 45px;
     }
@@ -25,7 +25,7 @@
       font-size: 17px;
     }
 
-    span{
+    span {
       margin: 0 10px;
       color: $grey;
       font-size: 13px;
@@ -33,7 +33,11 @@
 
     .cta {
       @include btn-jumbotron;
-      margin-top: 50px;
+      margin: 30px 0 20px ;
+
+      &:hover {
+        background: rgb(40, 59, 110);
+      }
       
       img {
         width: 20px;
@@ -43,41 +47,73 @@
       }
 
     }
+
+    a{
+      @include reset-a;
+
+      &:hover{
+        color:#30488f;
+      }
+    }
+
   }
 
   > img {
+    margin-top: 35px;
     width: 550px;
+  }
+
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  #jumbotron{
+
+    .jumbo-container{
+
+      p {
+        max-width: 600px;
+        margin: 20px auto 0; 
+        font-size: 20px;
+      }
+    }
+  }
+  
+  
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+  
+ 
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  #jumbotron{
+    min-height: 550px;
+    padding: 0 20px;
+    flex-direction: row;
     
+
+    .jumbo-container{
+      text-align: left;
+
+      p{
+        margin: 20px 0 0;
+        max-width: 450px;
+      }
+    }
   }
-
-
-
-
-
+   
 }
 
-
-
-
-
-
-
-
-/* Medium screen */
-@media all and (min-width: 769px) and (max-width: 1169px) {
-  #jumbotron{
-    padding: 0 20px;
-    flex-direction: row;
-  }
-
-}
-
-/* big screen */
-@media all and (min-width: 1170px) {
-  #jumbotron{
-    padding: 0 20px;
-    flex-direction: row;
-  }
-
-
-}

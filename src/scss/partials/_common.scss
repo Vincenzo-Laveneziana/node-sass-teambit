@@ -4,23 +4,21 @@
 
 
 //Mixins
-@mixin flex-space-between {
-  display: flex;
-  justify-content: space-between;
-}
 
-@mixin flex-align-center {
+@mixin flex-center-center($direction: row, $justify: flex-start, $align: flex-start) {
   display: flex;
-  align-items: center;
-}
-
-@mixin flex-center-center {
-  display: flex;
-  align-items: center;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin reset-list {
   list-style: none;
+}
+
+@mixin reset-a {
+  text-decoration: none;
+  color: $brown;
 }
 
 @mixin color-a-nav-bar {
@@ -69,28 +67,29 @@ main{
 }
 
 
-
-/* Small screen */
-@media screen and (max-width: 768px) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
   
 }
 
-/* Medium screen */
-@media all and (min-width: 769px) and (max-width: 1169px) {
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
   main{
     padding-top: 80px;
   }
-
 }
 
-
-/* big screen */
-@media all and (min-width: 1170px) {
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
   body {
     width: 1170px;
   }
 
-
 }
-
 
