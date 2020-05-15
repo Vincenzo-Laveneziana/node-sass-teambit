@@ -126,7 +126,7 @@ main {
 
 .hamburger-menu {
   position: absolute;
-  top: 60px;
+  top: 55px;
   left: 0;
   display: none;
   padding: 10px;
@@ -410,7 +410,8 @@ main {
   width: 300px;
 }
 
-#feedback .feed-container {
+#feedback .feed-container,
+#rewiews .feed-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -418,11 +419,13 @@ main {
   margin: 100px 0 20px;
 }
 
-#feedback .feed-container > img {
+#feedback .feed-container > img,
+#rewiews .feed-container > img {
   width: 500px;
 }
 
-#feedback .feed-container .feed-info {
+#feedback .feed-container .feed-info,
+#rewiews .feed-container .feed-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,14 +434,16 @@ main {
   color: #58402C;
 }
 
-#feedback .feed-container .feed-info p {
+#feedback .feed-container .feed-info p,
+#rewiews .feed-container .feed-info p {
   text-align: center;
   max-width: 510px;
   margin: 20px 0;
   font-size: 17px;
 }
 
-#feedback .feed-container .feed-info a {
+#feedback .feed-container .feed-info a,
+#rewiews .feed-container .feed-info a {
   text-decoration: none;
   color: #58402C;
   margin-bottom: 40px;
@@ -446,11 +451,13 @@ main {
   color: #30488f;
 }
 
-#feedback .feed-container .feed-info img {
+#feedback .feed-container .feed-info img,
+#rewiews .feed-container .feed-info img {
   width: 300px;
 }
 
-#surveys .feed-container {
+#surveys .feed-container,
+#praise .feed-container {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -458,7 +465,8 @@ main {
   margin: 50px 0 20px;
 }
 
-#surveys .feed-container .feed-info {
+#surveys .feed-container .feed-info,
+#praise .feed-container .feed-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -467,14 +475,16 @@ main {
   color: #58402C;
 }
 
-#surveys .feed-container .feed-info p {
+#surveys .feed-container .feed-info p,
+#praise .feed-container .feed-info p {
   text-align: center;
   max-width: 510px;
   margin: 20px 0;
   font-size: 17px;
 }
 
-#surveys .feed-container .feed-info a {
+#surveys .feed-container .feed-info a,
+#praise .feed-container .feed-info a {
   text-decoration: none;
   color: #58402C;
   margin-bottom: 40px;
@@ -482,11 +492,13 @@ main {
   color: #30488f;
 }
 
-#surveys .feed-container .feed-info img {
+#surveys .feed-container .feed-info img,
+#praise .feed-container .feed-info img {
   width: 300px;
 }
 
-#surveys .feed-container > img {
+#surveys .feed-container > img,
+#praise .feed-container > img {
   width: 500px;
 }
 
@@ -560,7 +572,8 @@ main {
     font-size: 17px;
   }
 
-  #feedback .feed-container {
+  #feedback .feed-container,
+  #rewiews .feed-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -568,15 +581,18 @@ main {
     margin: 100px 0 20px;
   }
 
-  #feedback .feed-container > img {
+  #feedback .feed-container > img,
+  #rewiews .feed-container > img {
     width: 700px;
   }
 
-  #feedback .feed-container .feed-info a {
+  #feedback .feed-container .feed-info a,
+  #rewiews .feed-container .feed-info a {
     font-size: 22px;
   }
 
-  #surveys .feed-container {
+  #surveys .feed-container,
+  #praise .feed-container {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -584,11 +600,13 @@ main {
     margin: 50px 0 20px;
   }
 
-  #surveys .feed-container > img {
+  #surveys .feed-container > img,
+  #praise .feed-container > img {
     width: 700px;
   }
 
-  #surveys .feed-container .feed-info a {
+  #surveys .feed-container .feed-info a,
+  #praise .feed-container .feed-info a {
     font-size: 22px;
   }
 }
@@ -602,7 +620,8 @@ main {
     margin: 0 30px;
   }
 
-  #feedback .feed-container {
+  #feedback .feed-container,
+  #rewiews .feed-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -611,13 +630,15 @@ main {
     position: relative;
   }
 
-  #feedback .feed-container > img {
+  #feedback .feed-container > img,
+  #rewiews .feed-container > img {
     position: absolute;
     width: 770px;
     right: 500px;
   }
 
-  #feedback .feed-container .feed-info {
+  #feedback .feed-container .feed-info,
+  #rewiews .feed-container .feed-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -627,24 +648,30 @@ main {
   }
 
   #feedback .feed-container .feed-info h2,
-  #feedback .feed-container .feed-info p {
+  #feedback .feed-container .feed-info p,
+  #rewiews .feed-container .feed-info h2,
+  #rewiews .feed-container .feed-info p {
     text-align: left;
   }
 
-  #feedback .feed-container .feed-info p {
+  #feedback .feed-container .feed-info p,
+  #rewiews .feed-container .feed-info p {
     font-size: 21px;
     margin: 25px 0;
   }
 
-  #feedback .feed-container .feed-info a {
+  #feedback .feed-container .feed-info a,
+  #rewiews .feed-container .feed-info a {
     font-size: 22px;
   }
 
-  #feedback .feed-container .feed-info img {
+  #feedback .feed-container .feed-info img,
+  #rewiews .feed-container .feed-info img {
     margin-left: 80px;
   }
 
-  #surveys .feed-container {
+  #surveys .feed-container,
+  #praise .feed-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -654,7 +681,8 @@ main {
     overflow-x: hidden;
   }
 
-  #surveys .feed-container > img {
+  #surveys .feed-container > img,
+  #praise .feed-container > img {
     /* position: absolute;
     left: 500px; */
     width: 770px;
@@ -662,7 +690,8 @@ main {
     z-index: 0;
   }
 
-  #surveys .feed-container .feed-info {
+  #surveys .feed-container .feed-info,
+  #praise .feed-container .feed-info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -674,24 +703,30 @@ main {
   }
 
   #surveys .feed-container .feed-info h2,
-  #surveys .feed-container .feed-info p {
+  #surveys .feed-container .feed-info p,
+  #praise .feed-container .feed-info h2,
+  #praise .feed-container .feed-info p {
     text-align: left;
   }
 
-  #surveys .feed-container .feed-info h2 {
+  #surveys .feed-container .feed-info h2,
+  #praise .feed-container .feed-info h2 {
     font-size: 21px;
   }
 
-  #surveys .feed-container .feed-info p {
+  #surveys .feed-container .feed-info p,
+  #praise .feed-container .feed-info p {
     font-size: 21px;
     margin: 25px 0;
   }
 
-  #surveys .feed-container .feed-info a {
+  #surveys .feed-container .feed-info a,
+  #praise .feed-container .feed-info a {
     font-size: 22px;
   }
 
-  #surveys .feed-container .feed-info img {
+  #surveys .feed-container .feed-info img,
+  #praise .feed-container .feed-info img {
     margin-left: 80px;
   }
 }
@@ -735,7 +770,8 @@ main {
     margin: 0 100px;
   }
 
-  #feedback .feed-container {
+  #feedback .feed-container,
+  #rewiews .feed-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -745,14 +781,16 @@ main {
     width: 1170px;
   }
 
-  #feedback .feed-container > img {
+  #feedback .feed-container > img,
+  #rewiews .feed-container > img {
     position: absolute;
     width: 65%;
     left: -185px;
     /* transform: translateX(-250px); */
   }
 
-  #feedback .feed-container .feed-info {
+  #feedback .feed-container .feed-info,
+  #rewiews .feed-container .feed-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -762,24 +800,30 @@ main {
   }
 
   #feedback .feed-container .feed-info h2,
-  #feedback .feed-container .feed-info p {
+  #feedback .feed-container .feed-info p,
+  #rewiews .feed-container .feed-info h2,
+  #rewiews .feed-container .feed-info p {
     text-align: left;
   }
 
-  #feedback .feed-container .feed-info p {
+  #feedback .feed-container .feed-info p,
+  #rewiews .feed-container .feed-info p {
     font-size: 21px;
     margin: 25px 0;
   }
 
-  #feedback .feed-container .feed-info a {
+  #feedback .feed-container .feed-info a,
+  #rewiews .feed-container .feed-info a {
     font-size: 22px;
   }
 
-  #feedback .feed-container .feed-info img {
+  #feedback .feed-container .feed-info img,
+  #rewiews .feed-container .feed-info img {
     margin-left: 80px;
   }
 
-  #surveys .feed-container {
+  #surveys .feed-container,
+  #praise .feed-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -788,12 +832,14 @@ main {
     overflow-x: hidden;
   }
 
-  #surveys .feed-container > img {
+  #surveys .feed-container > img,
+  #praise .feed-container > img {
     width: 770px;
     /* transform: translateX(100px); */
   }
 
-  #surveys .feed-container .feed-info {
+  #surveys .feed-container .feed-info,
+  #praise .feed-container .feed-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -803,20 +849,25 @@ main {
   }
 
   #surveys .feed-container .feed-info h2,
-  #surveys .feed-container .feed-info p {
+  #surveys .feed-container .feed-info p,
+  #praise .feed-container .feed-info h2,
+  #praise .feed-container .feed-info p {
     text-align: left;
   }
 
-  #surveys .feed-container .feed-info p {
+  #surveys .feed-container .feed-info p,
+  #praise .feed-container .feed-info p {
     font-size: 21px;
     margin: 25px 0;
   }
 
-  #surveys .feed-container .feed-info a {
+  #surveys .feed-container .feed-info a,
+  #praise .feed-container .feed-info a {
     font-size: 22px;
   }
 
-  #surveys .feed-container .feed-info img {
+  #surveys .feed-container .feed-info img,
+  #praise .feed-container .feed-info img {
     margin-left: 80px;
   }
 }
