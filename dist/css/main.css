@@ -396,7 +396,7 @@ main {
 #feedback .feed-container .feed-info p,
 #rewiews .feed-container .feed-info p {
   text-align: center;
-  max-width: 510px;
+  max-width: 500px;
   margin: 20px 0;
   font-size: 17px;
 }
@@ -437,7 +437,7 @@ main {
 #surveys .feed-container .feed-info p,
 #praise .feed-container .feed-info p {
   text-align: center;
-  max-width: 510px;
+  max-width: 500px;
   margin: 20px 0;
   font-size: 17px;
 }
