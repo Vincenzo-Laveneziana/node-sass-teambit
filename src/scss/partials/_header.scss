@@ -43,9 +43,6 @@
     a {
       @include color-a-nav-bar;
 
-      &:hover {
-        color:#30488f;
-      }
     }
 
     .cta {
@@ -56,12 +53,6 @@
         vertical-align: middle;
         margin: 0 5px 3px 0;
       }
-    }
-
-    .cta:hover{
-      transition: 0.7s;
-      background: #30488f;
-      color: $white;
     }
   }
 }//fine header right
@@ -123,12 +114,6 @@
             vertical-align: middle;
             margin: 0 5px 3px 0;
           }
-        }
-
-        .cta:hover {
-          transition: 0.7s;
-          background: #30488f;
-          color: $white;
         }
       }
     }//fine li

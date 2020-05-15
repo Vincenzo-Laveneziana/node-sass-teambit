@@ -25,6 +25,10 @@
   color: $brown;
   font-weight: bold;
   text-decoration: $none;
+
+  &:hover {
+    color:#30488f;
+  }
 }
 
 @mixin btn-header-nav {
@@ -35,6 +39,12 @@
   background-color: $white;
   font-weight: bold;
   cursor: pointer;
+
+  &:hover{
+    transition: 0.7s;
+    background: #30488f;
+    color: $white;
+  }
 }
 
 @mixin btn-jumbotron {
